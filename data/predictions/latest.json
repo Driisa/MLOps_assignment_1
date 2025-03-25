@@ -1,22 +1,102 @@
 {
-  "date": "2025-03-24",
-  "time": "18:40:54",
+  "date": "2025-03-25",
+  "time": "18:40:21",
   "penguin_data": {
-    "bill_length_mm": 42.589171842727794,
-    "bill_depth_mm": 16.153400750139337,
-    "flipper_length_mm": 179.69861861784906,
-    "body_mass_g": 3864.4108543520533,
-    "datetime": "2025-03-24T07:59:00+00:00"
+    "bill_length_mm": 43.9790403302779,
+    "bill_depth_mm": 17.67018906199478,
+    "flipper_length_mm": 215.99938872577417,
+    "body_mass_g": 3752.5424351489537,
+    "datetime": "2025-03-25T07:59:00+00:00"
   },
-  "predicted_species": "Chinstrap",
+  "predicted_species": "Adelie",
   "species_probabilities": {
-    "Adelie": 0.27,
-    "Chinstrap": 0.58,
-    "Gentoo": 0.15
+    "Adelie": 0.44,
+    "Chinstrap": 0.27,
+    "Gentoo": 0.29
   },
-  "is_adelie": false,
-  "adelie_probability": 0.515,
+  "is_adelie": true,
+  "adelie_probability": 0.42,
   "model_used": "RandomForest",
-  "character_match": null,
-  "note": "Not one of the Penguins of Madagascar"
+  "character_match": {
+    "best_match": {
+      "name": "Kowalski",
+      "similarity": 44.26367963393527,
+      "profile": "The intellectual of the group who handles analysis, calculations and invention designs. Second in command.",
+      "role": "Strategist",
+      "catchphrase": "I've calculated our odds of success at approximately... [complex number]%",
+      "skills": [
+        "Scientific analysis",
+        "Invention",
+        "Problem-solving"
+      ],
+      "classified_info": "Maintains a secret crush on a doll named Doris and keeps a lab notebook that could compromise multiple operations.",
+      "probability": 48.40634496763232
+    },
+    "all_matches": [
+      {
+        "name": "Kowalski",
+        "similarity": 44.26367963393527,
+        "profile": "The intellectual of the group who handles analysis, calculations and invention designs. Second in command.",
+        "role": "Strategist",
+        "catchphrase": "I've calculated our odds of success at approximately... [complex number]%",
+        "skills": [
+          "Scientific analysis",
+          "Invention",
+          "Problem-solving"
+        ],
+        "classified_info": "Maintains a secret crush on a doll named Doris and keeps a lab notebook that could compromise multiple operations.",
+        "probability": 48.40634496763232
+      },
+      {
+        "name": "Skipper",
+        "similarity": 26.045321130541705,
+        "profile": "The commanding officer and leader of the squad, known for his unwavering confidence and strict adherence to protocol.",
+        "role": "Leader",
+        "catchphrase": "Kowalski, options!",
+        "skills": [
+          "Leadership",
+          "Hand-to-hand combat",
+          "Tactical planning"
+        ],
+        "classified_info": "Has an irrational fear of needles and a mysterious history with a dolphin named Dr. Blowhole.",
+        "probability": 28.482918949901077
+      },
+      {
+        "name": "Private",
+        "similarity": 10.722426366653218,
+        "profile": "The youngest and most innocent member of the team, often serving as the heart of the group.",
+        "role": "Rookie",
+        "catchphrase": "Skipper, are you sure about this?",
+        "skills": [
+          "Cute and cuddly routine",
+          "Empathy",
+          "Reconnaissance"
+        ],
+        "classified_info": "Has been secretly identified as possessing a hidden power (the Hyperforce ability) unknown to his teammates until recently.",
+        "probability": 11.72594492565252
+      },
+      {
+        "name": "Rico",
+        "similarity": 10.410468892072734,
+        "profile": "The team's demolitions and weapons specialist, suffering from a peculiar stomach condition that allows him to regurgitate any needed item.",
+        "role": "Weapons Expert",
+        "catchphrase": "*Incoherent mumbling and explosion sounds*",
+        "skills": [
+          "Explosives handling",
+          "Regurgitation of tools",
+          "Destruction"
+        ],
+        "classified_info": "Can hold over 100 unique items in his stomach at once. Has a romantic relationship with a plastic doll.",
+        "probability": 11.384791156814082
+      }
+    ],
+    "penguin_data": {
+      "bill_length_mm": 43.9790403302779,
+      "bill_depth_mm": 17.67018906199478,
+      "flipper_length_mm": 215.99938872577417,
+      "body_mass_g": 3752.5424351489537,
+      "datetime": "2025-03-25T07:59:00+00:00"
+    }
+  },
+  "note": "This is likely Kowalski from the Penguins of Madagascar!"
 }
