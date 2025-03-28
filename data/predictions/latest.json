@@ -1,26 +1,26 @@
 {
-  "date": "2025-03-27",
-  "time": "18:39:59",
+  "date": "2025-03-28",
+  "time": "18:42:03",
   "penguin_data": {
-    "bill_length_mm": 45.687098989175226,
-    "bill_depth_mm": 17.81369500094816,
-    "flipper_length_mm": 185.3148608425986,
-    "body_mass_g": 4554.993173705314,
-    "datetime": "2025-03-27T07:59:00+00:00"
+    "bill_length_mm": 39.35703563483552,
+    "bill_depth_mm": 16.811409132064792,
+    "flipper_length_mm": 220.61808061046793,
+    "body_mass_g": 3819.7255422628805,
+    "datetime": "2025-03-28T07:59:00+00:00"
   },
   "predicted_species": "Adelie",
   "species_probabilities": {
-    "Adelie": 0.6,
-    "Chinstrap": 0.34,
-    "Gentoo": 0.06
+    "Adelie": 0.59,
+    "Chinstrap": 0.01,
+    "Gentoo": 0.4
   },
   "is_adelie": true,
-  "adelie_probability": 0.28,
+  "adelie_probability": 0.61,
   "model_used": "RandomForest",
   "character_match": {
     "best_match": {
       "name": "Skipper",
-      "similarity": 30.49551949411775,
+      "similarity": 37.80437540896614,
       "profile": "The commanding officer and leader of the squad, known for his unwavering confidence and strict adherence to protocol.",
       "role": "Leader",
       "catchphrase": "Kowalski, options!",
@@ -30,12 +30,12 @@
         "Tactical planning"
       ],
       "classified_info": "Has an irrational fear of needles and a mysterious history with a dolphin named Dr. Blowhole.",
-      "probability": 35.01843687253407
+      "probability": 35.93275961150442
     },
     "all_matches": [
       {
         "name": "Skipper",
-        "similarity": 30.49551949411775,
+        "similarity": 37.80437540896614,
         "profile": "The commanding officer and leader of the squad, known for his unwavering confidence and strict adherence to protocol.",
         "role": "Leader",
         "catchphrase": "Kowalski, options!",
@@ -45,11 +45,11 @@
           "Tactical planning"
         ],
         "classified_info": "Has an irrational fear of needles and a mysterious history with a dolphin named Dr. Blowhole.",
-        "probability": 35.01843687253407
+        "probability": 35.93275961150442
       },
       {
         "name": "Kowalski",
-        "similarity": 24.66587278833253,
+        "similarity": 35.33975898737693,
         "profile": "The intellectual of the group who handles analysis, calculations and invention designs. Second in command.",
         "role": "Strategist",
         "catchphrase": "I've calculated our odds of success at approximately... [complex number]%",
@@ -59,25 +59,11 @@
           "Problem-solving"
         ],
         "classified_info": "Maintains a secret crush on a doll named Doris and keeps a lab notebook that could compromise multiple operations.",
-        "probability": 28.324171008491533
-      },
-      {
-        "name": "Rico",
-        "similarity": 19.931058802023458,
-        "profile": "The team's demolitions and weapons specialist, suffering from a peculiar stomach condition that allows him to regurgitate any needed item.",
-        "role": "Weapons Expert",
-        "catchphrase": "*Incoherent mumbling and explosion sounds*",
-        "skills": [
-          "Explosives handling",
-          "Regurgitation of tools",
-          "Destruction"
-        ],
-        "classified_info": "Can hold over 100 unique items in his stomach at once. Has a romantic relationship with a plastic doll.",
-        "probability": 22.887117059804492
+        "probability": 33.59016120977214
       },
       {
         "name": "Private",
-        "similarity": 11.991731470905362,
+        "similarity": 16.953334952604425,
         "profile": "The youngest and most innocent member of the team, often serving as the heart of the group.",
         "role": "Rookie",
         "catchphrase": "Skipper, are you sure about this?",
@@ -87,15 +73,29 @@
           "Reconnaissance"
         ],
         "classified_info": "Has been secretly identified as possessing a hidden power (the Hyperforce ability) unknown to his teammates until recently.",
-        "probability": 13.77027505916991
+        "probability": 16.114010689904696
+      },
+      {
+        "name": "Rico",
+        "similarity": 15.111192100095474,
+        "profile": "The team's demolitions and weapons specialist, suffering from a peculiar stomach condition that allows him to regurgitate any needed item.",
+        "role": "Weapons Expert",
+        "catchphrase": "*Incoherent mumbling and explosion sounds*",
+        "skills": [
+          "Explosives handling",
+          "Regurgitation of tools",
+          "Destruction"
+        ],
+        "classified_info": "Can hold over 100 unique items in his stomach at once. Has a romantic relationship with a plastic doll.",
+        "probability": 14.363068488818733
       }
     ],
     "penguin_data": {
-      "bill_length_mm": 45.687098989175226,
-      "bill_depth_mm": 17.81369500094816,
-      "flipper_length_mm": 185.3148608425986,
-      "body_mass_g": 4554.993173705314,
-      "datetime": "2025-03-27T07:59:00+00:00"
+      "bill_length_mm": 39.35703563483552,
+      "bill_depth_mm": 16.811409132064792,
+      "flipper_length_mm": 220.61808061046793,
+      "body_mass_g": 3819.7255422628805,
+      "datetime": "2025-03-28T07:59:00+00:00"
     }
   },
   "note": "This is likely Skipper from the Penguins of Madagascar!"
