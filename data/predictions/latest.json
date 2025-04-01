@@ -1,69 +1,41 @@
 {
-  "date": "2025-03-31",
-  "time": "18:41:02",
+  "date": "2025-04-01",
+  "time": "18:41:03",
   "penguin_data": {
-    "bill_length_mm": 35.368774505224955,
-    "bill_depth_mm": 18.356426743167795,
-    "flipper_length_mm": 203.2520792860286,
-    "body_mass_g": 4619.562193170389,
-    "datetime": "2025-03-31T07:59:00+00:00"
+    "bill_length_mm": 35.93457491583991,
+    "bill_depth_mm": 17.650244984384553,
+    "flipper_length_mm": 196.2259536493397,
+    "body_mass_g": 3576.761734298502,
+    "datetime": "2025-04-01T07:59:00+00:00"
   },
   "predicted_species": "Adelie",
   "species_probabilities": {
-    "Adelie": 0.99,
-    "Chinstrap": 0.01,
+    "Adelie": 0.98,
+    "Chinstrap": 0.02,
     "Gentoo": 0.0
   },
   "is_adelie": true,
-  "adelie_probability": 0.755,
+  "adelie_probability": 1.0,
   "model_used": "RandomForest",
   "character_match": {
     "best_match": {
-      "name": "Skipper",
-      "similarity": 20.479413568821077,
-      "profile": "The commanding officer and leader of the squad, known for his unwavering confidence and strict adherence to protocol.",
-      "role": "Leader",
-      "catchphrase": "Kowalski, options!",
+      "name": "Kowalski",
+      "similarity": 33.420299236559906,
+      "profile": "The intellectual of the group who handles analysis, calculations and invention designs. Second in command.",
+      "role": "Strategist",
+      "catchphrase": "I've calculated our odds of success at approximately... [complex number]%",
       "skills": [
-        "Leadership",
-        "Hand-to-hand combat",
-        "Tactical planning"
+        "Scientific analysis",
+        "Invention",
+        "Problem-solving"
       ],
-      "classified_info": "Has an irrational fear of needles and a mysterious history with a dolphin named Dr. Blowhole.",
-      "probability": 29.29405335935902
+      "classified_info": "Maintains a secret crush on a doll named Doris and keeps a lab notebook that could compromise multiple operations.",
+      "probability": 32.876129413983705
     },
     "all_matches": [
       {
-        "name": "Skipper",
-        "similarity": 20.479413568821077,
-        "profile": "The commanding officer and leader of the squad, known for his unwavering confidence and strict adherence to protocol.",
-        "role": "Leader",
-        "catchphrase": "Kowalski, options!",
-        "skills": [
-          "Leadership",
-          "Hand-to-hand combat",
-          "Tactical planning"
-        ],
-        "classified_info": "Has an irrational fear of needles and a mysterious history with a dolphin named Dr. Blowhole.",
-        "probability": 29.29405335935902
-      },
-      {
-        "name": "Rico",
-        "similarity": 17.865774023448058,
-        "profile": "The team's demolitions and weapons specialist, suffering from a peculiar stomach condition that allows him to regurgitate any needed item.",
-        "role": "Weapons Expert",
-        "catchphrase": "*Incoherent mumbling and explosion sounds*",
-        "skills": [
-          "Explosives handling",
-          "Regurgitation of tools",
-          "Destruction"
-        ],
-        "classified_info": "Can hold over 100 unique items in his stomach at once. Has a romantic relationship with a plastic doll.",
-        "probability": 25.555465042511255
-      },
-      {
         "name": "Kowalski",
-        "similarity": 17.759438275463506,
+        "similarity": 33.420299236559906,
         "profile": "The intellectual of the group who handles analysis, calculations and invention designs. Second in command.",
         "role": "Strategist",
         "catchphrase": "I've calculated our odds of success at approximately... [complex number]%",
@@ -73,11 +45,11 @@
           "Problem-solving"
         ],
         "classified_info": "Maintains a secret crush on a doll named Doris and keeps a lab notebook that could compromise multiple operations.",
-        "probability": 25.40336082990776
+        "probability": 32.876129413983705
       },
       {
         "name": "Private",
-        "similarity": 13.805172266359333,
+        "similarity": 27.310869963000506,
         "profile": "The youngest and most innocent member of the team, often serving as the heart of the group.",
         "role": "Rookie",
         "catchphrase": "Skipper, are you sure about this?",
@@ -87,16 +59,44 @@
           "Reconnaissance"
         ],
         "classified_info": "Has been secretly identified as possessing a hidden power (the Hyperforce ability) unknown to his teammates until recently.",
-        "probability": 19.747120768221972
+        "probability": 26.866177617280584
+      },
+      {
+        "name": "Skipper",
+        "similarity": 26.67768201139526,
+        "profile": "The commanding officer and leader of the squad, known for his unwavering confidence and strict adherence to protocol.",
+        "role": "Leader",
+        "catchphrase": "Kowalski, options!",
+        "skills": [
+          "Leadership",
+          "Hand-to-hand combat",
+          "Tactical planning"
+        ],
+        "classified_info": "Has an irrational fear of needles and a mysterious history with a dolphin named Dr. Blowhole.",
+        "probability": 26.243299620497808
+      },
+      {
+        "name": "Rico",
+        "similarity": 14.2463613468363,
+        "profile": "The team's demolitions and weapons specialist, suffering from a peculiar stomach condition that allows him to regurgitate any needed item.",
+        "role": "Weapons Expert",
+        "catchphrase": "*Incoherent mumbling and explosion sounds*",
+        "skills": [
+          "Explosives handling",
+          "Regurgitation of tools",
+          "Destruction"
+        ],
+        "classified_info": "Can hold over 100 unique items in his stomach at once. Has a romantic relationship with a plastic doll.",
+        "probability": 14.014393348237904
       }
     ],
     "penguin_data": {
-      "bill_length_mm": 35.368774505224955,
-      "bill_depth_mm": 18.356426743167795,
-      "flipper_length_mm": 203.2520792860286,
-      "body_mass_g": 4619.562193170389,
-      "datetime": "2025-03-31T07:59:00+00:00"
+      "bill_length_mm": 35.93457491583991,
+      "bill_depth_mm": 17.650244984384553,
+      "flipper_length_mm": 196.2259536493397,
+      "body_mass_g": 3576.761734298502,
+      "datetime": "2025-04-01T07:59:00+00:00"
     }
   },
-  "note": "This is likely Skipper from the Penguins of Madagascar!"
+  "note": "This is likely Kowalski from the Penguins of Madagascar!"
 }
