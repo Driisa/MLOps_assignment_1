@@ -1,65 +1,61 @@
-name: Company Reputation Tracker
+name: Daily Penguin Prediction
 on:
   schedule:
-    # Run at 7:50 AM Denmark time (5:50 UTC in summer)
-    - cron: '18 6 * * *'
-  
+    # Run at 7:30 AM UTC every day
+    # - cron: '30 7 * '
+    - cron: '20 18 * '
+
   # Allow manual triggering
   workflow_dispatch:
-
 permissions:
   contents: write  # Explicit permission to write to repository contents
-
 jobs:
-  update-tracker:
+  predict:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
-    
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
-    
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-    
-    - name: Run data processing
-      env:
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
-      run: |
-        # Create required directories
-        mkdir -p logs assets/data
-        
-        # Initialize database
-        python -c "from db import init_db; init_db()" || echo "Database initialization failed"
-        
-        # Process data
-        python runner.py --all --limit 20 || python runner.py --generate-only
-        
-        # Generate static files
-        python generate_static_data.py
-        
-        # Copy any required files for GitHub Pages
-        # Add any file copying commands if needed here
-    
-    - name: Commit and push
-      run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        
-        # Add all the generated files
-        git add assets/data/*.json || true
-        git add company_tracker.db || true
-        git add logs/*.log || true
-        
-        # Commit if there are changes
-        git diff --staged --quiet || git commit -m "Update company tracker data for $(date +'%Y-%m-%d')"
-        
-        # Push changes with fallback strategy
-        git push || (git pull --rebase && git push)
+
+name: Set up Python
+uses: actions/setup-python@v4
+with:
+  python-version: '3.9'
+
+name: Install dependencies
+run: |
+  python -m pip install --upgrade pip
+  pip install -r requirements.txt
+
+name: Run prediction
+run: |
+  python scripts/prediction-api-script.py
+
+name: Copy files for GitHub Pages
+run: |
+  cp data/predictions/index.html ./index.html || true
+  cp data/predictions/latest_visualization.png ./latest_visualization.png || true
+  cp data/predictions/latest.json ./latest.json || true
+  cp data/predictions/history.json ./history.json || true
+
+  # Create a .nojekyll file to disable Jekyll processing
+  touch .nojekyll
+
+name: Commit and push
+run: |
+  git config --local user.email "github-actions[bot]@users.noreply.github.com"
+  git config --local user.name "github-actions[bot]"
+
+  # Add all the files
+  git add .nojekyll || true
+  git add index.html || true
+  git add latest_visualization.png || true
+  git add latest.json || true
+  git add history.json || true
+  git add data/predictions/* || true
+
+  # Commit if there are changes
+  git diff --staged --quiet || git commit -m "Update penguin prediction for $(date +'%Y-%m-%d')"
+
+  # Push changes to GitHub
+  git push || (git pull --rebase && git push)
